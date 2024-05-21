@@ -1,0 +1,1 @@
+## Alguns Exercicios em Python para se familiarizar com a linguagem de programação
