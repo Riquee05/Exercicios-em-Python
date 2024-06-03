@@ -1,8 +1,5 @@
-input("Isira sua idade: ")
+banco_dados = {"Dados1": {"nome":"Henrique","telefone":"123456789" } }
 
-idade = 0
+banco_dados.get()
 
-if idade <= 18:
-  print ("Menor de idade")
-elif idade >= 19:
-  print("Maior de idade")
+print(banco_dados)
