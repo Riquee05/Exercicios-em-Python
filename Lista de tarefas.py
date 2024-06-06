@@ -1,4 +1,4 @@
-import datetime
+
 
 
 tarefas = []
@@ -18,9 +18,9 @@ def listar_tarefas():
     if not tarefas:
         print("Nenhuma tarefa na lista")
     else:
-        print("Lista de tarefas")
-        for i in enumerate(tarefas, 1):
-            print(f"{i}. {tarefas}")
+        print("Lista de Tarefas:")
+        for i, tarefa in enumerate(tarefas, 1):
+            print(f"{i}. {tarefa}")
 
 def menu():
 
@@ -32,21 +32,21 @@ Lista de Tarefas em Python
 [1] Adicionar tarefa
 [2] Remover Tarefa
 [3] Listar Tarefa
+[4] Sair
 
-"""
+=> """
         opção = input(menu)
 
         if opção == "1":
-            adicionar = input("Inserir Tarefa(Numero , tarefa)")
-            adicionar_tarefas
+            adicionar = input("Inserir Tarefa: ")
+            adicionar_tarefas(adicionar)
         elif opção == "2":
-            remover = input("Remover tarefa ")
-            remover_tarefas
+            remover = input("Remover tarefa: ")
+            remover_tarefas(remover)
         elif opção == "3":
-            print("Lista de Tarefas ")
             listar_tarefas()
-        break
-    else:
-        print("Opção Invalida, tente novamente")
+        elif opção == "4":
+            print("Sair")
+            break
     
 menu()
